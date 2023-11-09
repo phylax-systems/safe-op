@@ -3,18 +3,18 @@ import { Alert } from "phylax-std/Alert.sol";
 import { Safe } from "safe-contracts/contracts/Safe.sol";
 
 contract TestNonce is Alert {
-    uint256 optimism;
+    uint256 ethereum;
     address[] safes;
 
     function setUp() public {
-        optimism = enableChain("optimism");
+        optimism = enableChain("ethereum");
         string memory root = vm.projectRoot();
         string memory path = string.concat(root, "safes.json");
         string memory json = vm.readFile(path);
         safes = vm.parseJsonAddressArray(json, ".safes");
     }
 
-    function testExposeNonce() public chain(optimism){
+    function testExposeNonce() public chain(ethereum){
         for(uint i; i < safes.length; i++){
             uint256 nonce = Safe(payable(safes[i])).nonce();
             string memory safeName = string.concat("safe-", vm.toString(i));
@@ -22,7 +22,7 @@ contract TestNonce is Alert {
         }
     }
     
-    function testDiff() public chain(optimism){
+    function testDiff() public chain(ethereum){
         for(uint i; i < safes.length; i++){
             uint256 current = Safe(payable(safes[i])).nonce();
             vm.roll(block.number - 1);
