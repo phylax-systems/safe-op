@@ -1,0 +1,3 @@
+[submodule "alerts/nonce/alerts/nonce/alerts/nonce/lib/forge-std"]
+	path = alerts/nonce/alerts/nonce/alerts/nonce/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std

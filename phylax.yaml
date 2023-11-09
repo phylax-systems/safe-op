@@ -1,0 +1,21 @@
+api:
+  bindIp: 127.0.0.1:4269
+alerts:
+  - name: safe
+    on:
+      - rule: 'type == "new_block" && origin == hash "ethereum"'
+        interval: 1
+    foundryProjectRootPath: ./alerts/nonce
+watchers:
+  - name: ethereum
+    chain: ethereum
+    ethRpc: "$RPC_ETHEREUM"
+actions:
+  - name: Slack
+    on:
+      - rule: 'origin == hash "safe" && type == "alert_execution" && alert_state == "on"'
+        interval: 1
+    target: $SLACK_ENDPOINT
+    platform: slack
+    title: "Nonce Check"
+    description: "A safe's nonce was changed"

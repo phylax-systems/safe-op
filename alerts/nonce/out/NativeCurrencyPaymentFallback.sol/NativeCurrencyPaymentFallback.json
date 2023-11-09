@@ -1,0 +1,384 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "SafeReceived",
+      "type": "event"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"SafeReceived\",\"type\":\"event\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"author\":\"Richard Meissner - @rmeissner\",\"kind\":\"dev\",\"methods\":{},\"title\":\"NativeCurrencyPaymentFallback - A contract that has a fallback to accept native currency payments.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/safe-contracts/contracts/common/NativeCurrencyPaymentFallback.sol\":\"NativeCurrencyPaymentFallback\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/phylax-std/lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/phylax-std/lib/forge-std/src/\",\":phylax-std/=lib/phylax-std/src/\",\":safe-contracts/=lib/safe-contracts/\"]},\"sources\":{\"lib/safe-contracts/contracts/common/NativeCurrencyPaymentFallback.sol\":{\"keccak256\":\"0x3ddcd4130c67326033dcf773d2d87d7147e3a8386993ea3ab3f1c38da406adba\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://740a729397b6a0d903f4738a50e856d4e5039555024937b148d97529525dbfa9\",\"dweb:/ipfs/QmQJuNVvHbkeJ6jjd75D8FsZBPXH6neoGBZdQgtsA82E7g\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "SafeReceived",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "receive"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/phylax-std/lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/phylax-std/lib/forge-std/src/",
+        "phylax-std/=lib/phylax-std/src/",
+        "safe-contracts/=lib/safe-contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/safe-contracts/contracts/common/NativeCurrencyPaymentFallback.sol": "NativeCurrencyPaymentFallback"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/safe-contracts/contracts/common/NativeCurrencyPaymentFallback.sol": {
+        "keccak256": "0x3ddcd4130c67326033dcf773d2d87d7147e3a8386993ea3ab3f1c38da406adba",
+        "urls": [
+          "bzz-raw://740a729397b6a0d903f4738a50e856d4e5039555024937b148d97529525dbfa9",
+          "dweb:/ipfs/QmQJuNVvHbkeJ6jjd75D8FsZBPXH6neoGBZdQgtsA82E7g"
+        ],
+        "license": "LGPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/safe-contracts/contracts/common/NativeCurrencyPaymentFallback.sol",
+    "id": 45645,
+    "exportedSymbols": {
+      "NativeCurrencyPaymentFallback": [
+        45644
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "42:541:27",
+    "nodes": [
+      {
+        "id": 45624,
+        "nodeType": "PragmaDirective",
+        "src": "42:31:27",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ]
+      },
+      {
+        "id": 45644,
+        "nodeType": "ContractDefinition",
+        "src": "233:349:27",
+        "nodes": [
+          {
+            "id": 45631,
+            "nodeType": "EventDefinition",
+            "src": "287:58:27",
+            "nodes": [],
+            "anonymous": false,
+            "eventSelector": "3d0ce9bfc3ed7d6862dbb28b2dea94561fe714a1b4d019aa8af39730d1ad7c3d",
+            "name": "SafeReceived",
+            "nameLocation": "293:12:27",
+            "parameters": {
+              "id": 45630,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 45627,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "sender",
+                  "nameLocation": "322:6:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45631,
+                  "src": "306:22:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 45626,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "306:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 45629,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "338:5:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45631,
+                  "src": "330:13:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 45628,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "330:7:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "305:39:27"
+            }
+          },
+          {
+            "id": 45643,
+            "nodeType": "FunctionDefinition",
+            "src": "496:84:27",
+            "nodes": [],
+            "body": {
+              "id": 45642,
+              "nodeType": "Block",
+              "src": "523:57:27",
+              "nodes": [],
+              "statements": [
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 45636,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "551:3:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 45637,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "555:6:27",
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "src": "551:10:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "expression": {
+                          "id": 45638,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "563:3:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 45639,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "567:5:27",
+                        "memberName": "value",
+                        "nodeType": "MemberAccess",
+                        "src": "563:9:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 45635,
+                      "name": "SafeReceived",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45631,
+                      "src": "538:12:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,uint256)"
+                      }
+                    },
+                    "id": 45640,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "538:35:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 45641,
+                  "nodeType": "EmitStatement",
+                  "src": "533:40:27"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 45632,
+              "nodeType": "StructuredDocumentation",
+              "src": "351:140:27",
+              "text": " @notice Receive function accepts native currency transactions.\n @dev Emits an event with sender and received value."
+            },
+            "implemented": true,
+            "kind": "receive",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 45633,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "503:2:27"
+            },
+            "returnParameters": {
+              "id": 45634,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "523:0:27"
+            },
+            "scope": 45644,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [],
+        "canonicalName": "NativeCurrencyPaymentFallback",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 45625,
+          "nodeType": "StructuredDocumentation",
+          "src": "75:157:27",
+          "text": " @title NativeCurrencyPaymentFallback - A contract that has a fallback to accept native currency payments.\n @author Richard Meissner - @rmeissner"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          45644
+        ],
+        "name": "NativeCurrencyPaymentFallback",
+        "nameLocation": "251:29:27",
+        "scope": 45645,
+        "usedErrors": []
+      }
+    ],
+    "license": "LGPL-3.0-only"
+  },
+  "id": 27
+}

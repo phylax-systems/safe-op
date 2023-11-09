@@ -1,0 +1,246 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "name": "export",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "export(string,string)": "c8586906"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"value\",\"type\":\"string\"}],\"name\":\"export\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/phylax-std/src/Phylax.sol\":\"Phylax\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/phylax-std/lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/phylax-std/lib/forge-std/src/\",\":phylax-std/=lib/phylax-std/src/\",\":safe-contracts/=lib/safe-contracts/\"]},\"sources\":{\"lib/phylax-std/src/Phylax.sol\":{\"keccak256\":\"0x14af8ef182741eba4a6af268bcd889236a7136cfcdd005b048ca0f24a7041830\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c7000c6b3af5b314e25ac935497cdd9156dd9d91c87ba6732860caaaf8a0c6bd\",\"dweb:/ipfs/QmXtEC8qDdKKTWih57bTd91Qr8gqciUJjkFntmdYYS8JHf\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "value",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "export"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/phylax-std/lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/phylax-std/lib/forge-std/src/",
+        "phylax-std/=lib/phylax-std/src/",
+        "safe-contracts/=lib/safe-contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/phylax-std/src/Phylax.sol": "Phylax"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/phylax-std/src/Phylax.sol": {
+        "keccak256": "0x14af8ef182741eba4a6af268bcd889236a7136cfcdd005b048ca0f24a7041830",
+        "urls": [
+          "bzz-raw://c7000c6b3af5b314e25ac935497cdd9156dd9d91c87ba6732860caaaf8a0c6bd",
+          "dweb:/ipfs/QmXtEC8qDdKKTWih57bTd91Qr8gqciUJjkFntmdYYS8JHf"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/phylax-std/src/Phylax.sol",
+    "id": 43453,
+    "exportedSymbols": {
+      "Phylax": [
+        43452
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:438:19",
+    "nodes": [
+      {
+        "id": 43443,
+        "nodeType": "PragmaDirective",
+        "src": "32:31:19",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".2",
+          "<",
+          "0.9",
+          ".0"
+        ]
+      },
+      {
+        "id": 43444,
+        "nodeType": "PragmaDirective",
+        "src": "64:33:19",
+        "nodes": [],
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ]
+      },
+      {
+        "id": 43452,
+        "nodeType": "ContractDefinition",
+        "src": "238:231:19",
+        "nodes": [
+          {
+            "id": 43451,
+            "nodeType": "FunctionDefinition",
+            "src": "397:70:19",
+            "nodes": [],
+            "functionSelector": "c8586906",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "export",
+            "nameLocation": "406:6:19",
+            "parameters": {
+              "id": 43449,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 43446,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "429:4:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43451,
+                  "src": "413:20:19",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 43445,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "413:6:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43448,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "451:5:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 43451,
+                  "src": "435:21:19",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 43447,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "435:6:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "412:45:19"
+            },
+            "returnParameters": {
+              "id": 43450,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "466:0:19"
+            },
+            "scope": 43452,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Phylax",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          43452
+        ],
+        "name": "Phylax",
+        "nameLocation": "248:6:19",
+        "scope": 43453,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 19
+}
